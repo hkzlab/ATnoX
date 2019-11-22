@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+LIBS:ATlessX-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5DD82289
+P 6600 1600
+F 0 "#PWR?" H 6600 1350 50  0001 C CNN
+F 1 "GND" V 6605 1472 50  0000 R CNN
+F 2 "" H 6600 1600 50  0001 C CNN
+F 3 "" H 6600 1600 50  0001 C CNN
+	1    6600 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS74 U?
+U 1 1 5DD823EB
+P 5700 3150
+F 0 "U?" H 5700 3628 50  0000 C CNN
+F 1 "74LS74" H 5700 3537 50  0000 C CNN
+F 2 "" H 5700 3150 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 5700 3150 50  0001 C CNN
+	1    5700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U1
+U 3 1 5DD82446
+P 5600 1250
+F 0 "U1" V 5233 1250 50  0000 C CNN
+F 1 "74LS74" V 5324 1250 50  0000 C CNN
+F 2 "" H 5600 1250 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 5600 1250 50  0001 C CNN
+	3    5600 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS14 U2
+U 1 1 5DD82518
+P 2500 2300
+F 0 "U2" H 2500 2617 50  0000 C CNN
+F 1 "74LS14" H 2500 2526 50  0000 C CNN
+F 2 "" H 2500 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U2
+U 7 1 5DD82573
+P 5600 1900
+F 0 "U2" V 5233 1900 50  0000 C CNN
+F 1 "74LS14" V 5324 1900 50  0000 C CNN
+F 2 "" H 5600 1900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 5600 1900 50  0001 C CNN
+	7    5600 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 1250 6300 1250
+Wire Wire Line
+	6300 1900 6100 1900
+Wire Wire Line
+	6600 1600 6300 1600
+Wire Wire Line
+	6300 1250 6300 1600
+Connection ~ 6300 1600
+Wire Wire Line
+	6300 1600 6300 1900
+Wire Wire Line
+	6000 3050 6400 3050
+Text Label 6300 3050 0    50   ~ 0
+~PS_ON
+Wire Wire Line
+	5200 1250 5000 1250
+Wire Wire Line
+	5000 1250 5000 1900
+Wire Wire Line
+	5000 1900 5100 1900
+Wire Wire Line
+	5000 1900 5000 3600
+Wire Wire Line
+	5000 3600 5700 3600
+Wire Wire Line
+	5700 3600 5700 3450
+Connection ~ 5000 1900
+$Comp
+L Device:D_Small D?
+U 1 1 5DD82675
+P 1200 1450
+F 0 "D?" H 1200 1655 50  0000 C CNN
+F 1 "D_Small" H 1200 1564 50  0000 C CNN
+F 2 "" V 1200 1450 50  0001 C CNN
+F 3 "~" V 1200 1450 50  0001 C CNN
+	1    1200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DD827BB
+P 850 1800
+F 0 "R?" H 909 1846 50  0000 L CNN
+F 1 "R_Small" H 909 1755 50  0000 L CNN
+F 2 "" H 850 1800 50  0001 C CNN
+F 3 "~" H 850 1800 50  0001 C CNN
+	1    850  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DD82728
+P 2250 3600
+F 0 "SW?" H 2250 3885 50  0000 C CNN
+F 1 "SW_Push" H 2250 3794 50  0000 C CNN
+F 2 "" H 2250 3800 50  0001 C CNN
+F 3 "~" H 2250 3800 50  0001 C CNN
+	1    2250 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5DD82992
+P 2150 4400
+F 0 "C?" H 2241 4446 50  0000 L CNN
+F 1 "CP1_Small" H 2241 4355 50  0000 L CNN
+F 2 "" H 2150 4400 50  0001 C CNN
+F 3 "~" H 2150 4400 50  0001 C CNN
+	1    2150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U?
+U 1 1 5DD82CD4
+P 2900 1900
+F 0 "U?" H 2900 2217 50  0000 C CNN
+F 1 "74LS14" H 2900 2126 50  0000 C CNN
+F 2 "" H 2900 1900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 2900 1900 50  0001 C CNN
+	1    2900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U?
+U 1 1 5DD82D12
+P 3250 2350
+F 0 "U?" H 3250 2667 50  0000 C CNN
+F 1 "74LS14" H 3250 2576 50  0000 C CNN
+F 2 "" H 3250 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 3250 2350 50  0001 C CNN
+	1    3250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DD82D7E
+P 600 2150
+F 0 "R?" H 659 2196 50  0000 L CNN
+F 1 "R_Small" H 659 2105 50  0000 L CNN
+F 2 "" H 600 2150 50  0001 C CNN
+F 3 "~" H 600 2150 50  0001 C CNN
+	1    600  2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DD82DBA
+P 1200 2250
+F 0 "R?" H 1259 2296 50  0000 L CNN
+F 1 "R_Small" H 1259 2205 50  0000 L CNN
+F 2 "" H 1200 2250 50  0001 C CNN
+F 3 "~" H 1200 2250 50  0001 C CNN
+	1    1200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 5DD82DEF
+P 1700 1350
+F 0 "D?" H 1700 1555 50  0000 C CNN
+F 1 "D_Small" H 1700 1464 50  0000 C CNN
+F 2 "" V 1700 1350 50  0001 C CNN
+F 3 "~" V 1700 1350 50  0001 C CNN
+	1    1700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5DD82E48
+P 1700 3950
+F 0 "C?" H 1791 3996 50  0000 L CNN
+F 1 "CP1_Small" H 1791 3905 50  0000 L CNN
+F 2 "" H 1700 3950 50  0001 C CNN
+F 3 "~" H 1700 3950 50  0001 C CNN
+	1    1700 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
