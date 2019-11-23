@@ -45,7 +45,7 @@ F 1 "74LS74" V 5324 1250 50  0000 C CNN
 F 2 "" H 5600 1250 50  0001 C CNN
 F 3 "74xx/74hc_hct74.pdf" H 5600 1250 50  0001 C CNN
 	3    5600 1250
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L 74xx:74LS14 U2
@@ -67,7 +67,7 @@ F 1 "74LS14" V 5324 1900 50  0000 C CNN
 F 2 "" H 5600 1900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 5600 1900 50  0001 C CNN
 	7    5600 1900
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	6000 1250 6300 1250
@@ -98,44 +98,44 @@ Wire Wire Line
 	5700 3600 5700 3450
 Connection ~ 5000 1900
 $Comp
-L Device:D_Small D?
+L Device:D_Small D1
 U 1 1 5DD82675
-P 1200 1450
-F 0 "D?" H 1200 1655 50  0000 C CNN
-F 1 "D_Small" H 1200 1564 50  0000 C CNN
-F 2 "" V 1200 1450 50  0001 C CNN
-F 3 "~" V 1200 1450 50  0001 C CNN
-	1    1200 1450
-	1    0    0    -1  
+P 1350 2350
+F 0 "D1" H 1350 2555 50  0000 C CNN
+F 1 "1N4148" H 1350 2464 50  0000 C CNN
+F 2 "" V 1350 2350 50  0001 C CNN
+F 3 "~" V 1350 2350 50  0001 C CNN
+	1    1350 2350
+	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R3
 U 1 1 5DD827BB
-P 850 1800
-F 0 "R?" H 909 1846 50  0000 L CNN
-F 1 "R_Small" H 909 1755 50  0000 L CNN
-F 2 "" H 850 1800 50  0001 C CNN
-F 3 "~" H 850 1800 50  0001 C CNN
-	1    850  1800
-	1    0    0    -1  
+P 1100 2850
+F 0 "R3" H 1159 2896 50  0000 L CNN
+F 1 "470" H 1159 2805 50  0000 L CNN
+F 2 "" H 1100 2850 50  0001 C CNN
+F 3 "~" H 1100 2850 50  0001 C CNN
+	1    1100 2850
+	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 5DD82728
 P 850 3950
-F 0 "SW?" V 896 3902 50  0000 R CNN
-F 1 "SW_Push" V 805 3902 50  0000 R CNN
+F 0 "SW1" V 896 3902 50  0000 R CNN
+F 1 "Power" V 805 3902 50  0000 R CNN
 F 2 "" H 850 4150 50  0001 C CNN
 F 3 "~" H 850 4150 50  0001 C CNN
 	1    850  3950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C2
 U 1 1 5DD82992
 P 1950 4050
-F 0 "C?" H 2041 4096 50  0000 L CNN
-F 1 "CP1_Small" H 2041 4005 50  0000 L CNN
+F 0 "C2" H 2041 4096 50  0000 L CNN
+F 1 "10uF" H 2041 4005 50  0000 L CNN
 F 2 "" H 1950 4050 50  0001 C CNN
 F 3 "~" H 1950 4050 50  0001 C CNN
 	1    1950 4050
@@ -164,44 +164,44 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 3800 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R1
 U 1 1 5DD82D7E
-P 600 2150
-F 0 "R?" H 659 2196 50  0000 L CNN
-F 1 "R_Small" H 659 2105 50  0000 L CNN
-F 2 "" H 600 2150 50  0001 C CNN
-F 3 "~" H 600 2150 50  0001 C CNN
-	1    600  2150
+P 850 2350
+F 0 "R1" H 909 2396 50  0000 L CNN
+F 1 "10K" H 909 2305 50  0000 L CNN
+F 2 "" H 850 2350 50  0001 C CNN
+F 3 "~" H 850 2350 50  0001 C CNN
+	1    850  2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R2
 U 1 1 5DD82DBA
-P 1200 2250
-F 0 "R?" H 1259 2296 50  0000 L CNN
-F 1 "R_Small" H 1259 2205 50  0000 L CNN
-F 2 "" H 1200 2250 50  0001 C CNN
-F 3 "~" H 1200 2250 50  0001 C CNN
-	1    1200 2250
+P 1650 2350
+F 0 "R2" H 1709 2396 50  0000 L CNN
+F 1 "10K" H 1709 2305 50  0000 L CNN
+F 2 "" H 1650 2350 50  0001 C CNN
+F 3 "~" H 1650 2350 50  0001 C CNN
+	1    1650 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D?
+L Device:D_Small D2
 U 1 1 5DD82DEF
-P 1700 1350
-F 0 "D?" H 1700 1555 50  0000 C CNN
-F 1 "D_Small" H 1700 1464 50  0000 C CNN
-F 2 "" V 1700 1350 50  0001 C CNN
-F 3 "~" V 1700 1350 50  0001 C CNN
-	1    1700 1350
-	1    0    0    -1  
+P 1950 2350
+F 0 "D2" H 1950 2555 50  0000 C CNN
+F 1 "1N4148" H 1950 2464 50  0000 C CNN
+F 2 "" V 1950 2350 50  0001 C CNN
+F 3 "~" V 1950 2350 50  0001 C CNN
+	1    1950 2350
+	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C1
 U 1 1 5DD82E48
 P 1350 4050
-F 0 "C?" H 1441 4096 50  0000 L CNN
-F 1 "CP1_Small" H 1441 4005 50  0000 L CNN
+F 0 "C1" H 1441 4096 50  0000 L CNN
+F 1 "1uF" H 1441 4005 50  0000 L CNN
 F 2 "" H 1350 4050 50  0001 C CNN
 F 3 "~" H 1350 4050 50  0001 C CNN
 	1    1350 4050
@@ -257,4 +257,64 @@ F 3 "" H 1350 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 4450 1350 4750
+Wire Wire Line
+	1650 2450 1650 3500
+Wire Wire Line
+	1650 3500 1950 3500
+Wire Wire Line
+	1950 3950 1950 3500
+Connection ~ 1950 3500
+Wire Wire Line
+	1950 3500 2350 3500
+Wire Wire Line
+	1950 3500 1950 2450
+Wire Wire Line
+	1350 2450 1350 2850
+Wire Wire Line
+	2950 2850 1350 2850
+Connection ~ 1350 2850
+Wire Wire Line
+	1350 2850 1350 3950
+Wire Wire Line
+	1200 2850 1350 2850
+Wire Wire Line
+	850  3750 850  2850
+Wire Wire Line
+	850  2850 1000 2850
+Wire Wire Line
+	850  2850 850  2450
+Connection ~ 850  2850
+Wire Wire Line
+	850  2250 850  1900
+Wire Wire Line
+	850  1900 1350 1900
+Wire Wire Line
+	1950 2250 1950 1900
+Connection ~ 1950 1900
+Wire Wire Line
+	1950 1900 5000 1900
+Wire Wire Line
+	1650 2250 1650 1900
+Connection ~ 1650 1900
+Wire Wire Line
+	1650 1900 1950 1900
+Wire Wire Line
+	1350 2250 1350 1900
+Connection ~ 1350 1900
+Wire Wire Line
+	1350 1900 1650 1900
+Text Label 900  1900 0    50   ~ 0
+5VSB
+Text Label 850  3400 1    50   ~ 0
+PWR_SW
+Wire Notes Line
+	650  650  6950 650 
+Wire Notes Line
+	6950 650  6950 5100
+Wire Notes Line
+	6950 5100 650  5100
+Wire Notes Line
+	650  5100 650  650 
+Text Notes 6800 5000 2    168  ~ 0
+ATX Power On Circuit
 $EndSCHEMATC
