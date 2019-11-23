@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "ATlessX"
 Date ""
 Rev ""
 Comp ""
@@ -82,7 +82,7 @@ Wire Wire Line
 	6300 1600 6300 1900
 Wire Wire Line
 	6000 3050 6400 3050
-Text Label 6300 3050 0    50   ~ 0
+Text Label 6400 3050 2    50   ~ 0
 ~PS_ON
 Wire Wire Line
 	5200 1250 5000 1250
@@ -345,9 +345,9 @@ Wire Wire Line
 	7950 1600 7400 1600
 Wire Wire Line
 	8550 1600 9100 1600
-Text Label 7650 1600 2    50   ~ 0
+Text Label 7400 1600 0    50   ~ 0
 -12V
-Text Label 8900 1600 0    50   ~ 0
+Text Label 9100 1600 2    50   ~ 0
 -5V
 Wire Notes Line
 	7000 650  7000 2550
@@ -455,7 +455,7 @@ L power:VCC #PWR?
 U 1 1 5DDB34E7
 P 9800 1950
 F 0 "#PWR?" H 9800 1800 50  0001 C CNN
-F 1 "VCC" H 9817 2123 50  0000 C CNN
+F 1 "VCC" H 9800 1950 50  0000 C CNN
 F 2 "" H 9800 1950 50  0001 C CNN
 F 3 "" H 9800 1950 50  0001 C CNN
 	1    9800 1950
@@ -469,13 +469,13 @@ Wire Wire Line
 	10000 1850 10000 2150
 Wire Wire Line
 	10100 1850 10100 2150
-Text Label 9700 2100 1    50   ~ 0
+Text Label 9700 2150 1    50   ~ 0
 5VSB
-Text Label 9900 2050 1    50   ~ 0
+Text Label 9900 2150 1    50   ~ 0
 12V
-Text Label 10000 2100 1    50   ~ 0
+Text Label 10000 2150 1    50   ~ 0
 -12V
-Text Label 10100 2050 1    50   ~ 0
+Text Label 10100 2150 1    50   ~ 0
 -5V
 Wire Notes Line
 	11150 2550 11150 650 
@@ -487,4 +487,317 @@ Wire Notes Line
 	9500 650  11150 650 
 Text Notes 11050 2450 2    168  ~ 0
 Power LEDs
+$Comp
+L Connector_Generic:Conn_02x10_Top_Bottom J2
+U 1 1 5DD97B5B
+P 9000 3650
+F 0 "J2" H 9050 4267 50  0000 C CNN
+F 1 "ATX" H 9050 4176 50  0000 C CNN
+F 2 "" H 9000 3650 50  0001 C CNN
+F 3 "~" H 9000 3650 50  0001 C CNN
+	1    9000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5DD97E86
+P 950 1150
+F 0 "J1" H 1056 1328 50  0000 C CNN
+F 1 "EXT_PWR_SW" H 1056 1237 50  0000 C CNN
+F 2 "" H 950 1150 50  0001 C CNN
+F 3 "~" H 950 1150 50  0001 C CNN
+	1    950  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD98234
+P 1300 1350
+F 0 "#PWR?" H 1300 1100 50  0001 C CNN
+F 1 "GND" H 1305 1177 50  0000 C CNN
+F 2 "" H 1300 1350 50  0001 C CNN
+F 3 "" H 1300 1350 50  0001 C CNN
+	1    1300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1250 1300 1250
+Wire Wire Line
+	1300 1250 1300 1350
+Wire Wire Line
+	1150 1150 1700 1150
+Text Label 1700 1150 2    50   ~ 0
+PWR_SW
+Wire Wire Line
+	9300 3250 9450 3250
+Wire Wire Line
+	8800 3250 8650 3250
+Wire Wire Line
+	8800 3350 8650 3350
+NoConn ~ 9450 3250
+NoConn ~ 8650 3250
+NoConn ~ 8650 3350
+Wire Wire Line
+	9300 3950 9450 3950
+NoConn ~ 9450 3950
+Wire Wire Line
+	9300 3350 9950 3350
+Text Label 9950 3350 2    50   ~ 0
+-12V
+Wire Wire Line
+	9300 3550 9950 3550
+Text Label 9950 3550 2    50   ~ 0
+~PS_ON
+$Comp
+L power:VCC #PWR?
+U 1 1 5DDB3E20
+P 9500 4100
+F 0 "#PWR?" H 9500 3950 50  0001 C CNN
+F 1 "VCC" V 9517 4228 50  0000 L CNN
+F 2 "" H 9500 4100 50  0001 C CNN
+F 3 "" H 9500 4100 50  0001 C CNN
+	1    9500 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 4050 9350 4050
+Wire Wire Line
+	9350 4050 9350 4100
+Wire Wire Line
+	9350 4150 9300 4150
+Wire Wire Line
+	9350 4100 9500 4100
+Connection ~ 9350 4100
+Wire Wire Line
+	9350 4100 9350 4150
+$Comp
+L power:VCC #PWR?
+U 1 1 5DDB8B01
+P 8700 3550
+F 0 "#PWR?" H 8700 3400 50  0001 C CNN
+F 1 "VCC" V 8717 3677 50  0000 L CNN
+F 2 "" H 8700 3550 50  0001 C CNN
+F 3 "" H 8700 3550 50  0001 C CNN
+	1    8700 3550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8700 3550 8800 3550
+$Comp
+L power:VCC #PWR?
+U 1 1 5DDBC074
+P 8700 3750
+F 0 "#PWR?" H 8700 3600 50  0001 C CNN
+F 1 "VCC" V 8717 3877 50  0000 L CNN
+F 2 "" H 8700 3750 50  0001 C CNN
+F 3 "" H 8700 3750 50  0001 C CNN
+	1    8700 3750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8700 3750 8800 3750
+Wire Wire Line
+	8800 4050 8250 4050
+Text Label 8250 4050 0    50   ~ 0
+5VSB
+Wire Wire Line
+	8800 4150 8250 4150
+Text Label 8250 4150 0    50   ~ 0
++12V
+$Comp
+L power:GND #PWR?
+U 1 1 5DD98944
+P 8050 3650
+F 0 "#PWR?" H 8050 3400 50  0001 C CNN
+F 1 "GND" V 8055 3522 50  0000 R CNN
+F 2 "" H 8050 3650 50  0001 C CNN
+F 3 "" H 8050 3650 50  0001 C CNN
+	1    8050 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 3650 8250 3650
+Wire Wire Line
+	8800 3450 8250 3450
+Wire Wire Line
+	8250 3450 8250 3650
+Connection ~ 8250 3650
+Wire Wire Line
+	8250 3650 8050 3650
+Wire Wire Line
+	8800 3850 8250 3850
+Wire Wire Line
+	8250 3850 8250 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5DDA0526
+P 10200 3650
+F 0 "#PWR?" H 10200 3400 50  0001 C CNN
+F 1 "GND" V 10205 3522 50  0000 R CNN
+F 2 "" H 10200 3650 50  0001 C CNN
+F 3 "" H 10200 3650 50  0001 C CNN
+	1    10200 3650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9300 3450 10100 3450
+Wire Wire Line
+	10100 3450 10100 3650
+Wire Wire Line
+	10100 3650 10200 3650
+Wire Wire Line
+	10100 3650 9300 3650
+Connection ~ 10100 3650
+Wire Wire Line
+	9300 3750 10100 3750
+Wire Wire Line
+	10100 3750 10100 3650
+Wire Wire Line
+	9300 3850 10100 3850
+Wire Wire Line
+	10100 3850 10100 3750
+Connection ~ 10100 3750
+Wire Notes Line
+	7000 2600 7000 5100
+Wire Notes Line
+	7000 5100 11150 5100
+Wire Notes Line
+	11150 5100 11150 2600
+Wire Notes Line
+	11150 2600 7000 2600
+Text Notes 8200 5000 0    168  ~ 0
+ATX Connector
+Wire Wire Line
+	8800 3950 8250 3950
+Text Label 8250 3950 0    50   ~ 0
+PWR_OK
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 5DDBB6AF
+P 1100 5850
+F 0 "J3" H 1206 6228 50  0000 C CNN
+F 1 "P8" H 1206 6137 50  0000 C CNN
+F 2 "" H 1100 5850 50  0001 C CNN
+F 3 "~" H 1100 5850 50  0001 C CNN
+	1    1100 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J4
+U 1 1 5DDBB718
+P 2850 5850
+F 0 "J4" H 2956 6228 50  0000 C CNN
+F 1 "P9" H 2956 6137 50  0000 C CNN
+F 2 "" H 2850 5850 50  0001 C CNN
+F 3 "~" H 2850 5850 50  0001 C CNN
+	1    2850 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5650 1750 5650
+Text Label 1750 5650 2    50   ~ 0
+PWR_OK
+$Comp
+L power:VCC #PWR?
+U 1 1 5DD99954
+P 1750 5750
+F 0 "#PWR?" H 1750 5600 50  0001 C CNN
+F 1 "VCC" V 1767 5878 50  0000 L CNN
+F 2 "" H 1750 5750 50  0001 C CNN
+F 3 "" H 1750 5750 50  0001 C CNN
+	1    1750 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 5750 1750 5750
+Wire Wire Line
+	1300 5850 1750 5850
+Wire Wire Line
+	1300 5950 1750 5950
+Text Label 1750 5850 2    50   ~ 0
++12V
+Text Label 1750 5950 2    50   ~ 0
+-12V
+$Comp
+L power:GND #PWR?
+U 1 1 5DDA43EF
+P 1750 6100
+F 0 "#PWR?" H 1750 5850 50  0001 C CNN
+F 1 "GND" V 1755 5972 50  0000 R CNN
+F 2 "" H 1750 6100 50  0001 C CNN
+F 3 "" H 1750 6100 50  0001 C CNN
+	1    1750 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 6050 1400 6050
+Wire Wire Line
+	1400 6050 1400 6100
+Wire Wire Line
+	1400 6150 1300 6150
+Wire Wire Line
+	1400 6100 1750 6100
+Connection ~ 1400 6100
+Wire Wire Line
+	1400 6100 1400 6150
+$Comp
+L power:GND #PWR?
+U 1 1 5DDACF0F
+P 3500 5700
+F 0 "#PWR?" H 3500 5450 50  0001 C CNN
+F 1 "GND" V 3505 5572 50  0000 R CNN
+F 2 "" H 3500 5700 50  0001 C CNN
+F 3 "" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 5650 3150 5650
+Wire Wire Line
+	3150 5650 3150 5700
+Wire Wire Line
+	3150 5750 3050 5750
+Wire Wire Line
+	3150 5700 3500 5700
+Connection ~ 3150 5700
+Wire Wire Line
+	3150 5700 3150 5750
+Wire Wire Line
+	3050 5850 3500 5850
+Text Label 3500 5850 2    50   ~ 0
+-5V
+$Comp
+L power:VCC #PWR?
+U 1 1 5DDB7431
+P 3500 6050
+F 0 "#PWR?" H 3500 5900 50  0001 C CNN
+F 1 "VCC" V 3517 6178 50  0000 L CNN
+F 2 "" H 3500 6050 50  0001 C CNN
+F 3 "" H 3500 6050 50  0001 C CNN
+	1    3500 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 6050 3150 6050
+Wire Wire Line
+	3050 5950 3150 5950
+Wire Wire Line
+	3150 5950 3150 6050
+Connection ~ 3150 6050
+Wire Wire Line
+	3150 6050 3500 6050
+Wire Wire Line
+	3050 6150 3150 6150
+Wire Wire Line
+	3150 6150 3150 6050
+Wire Notes Line
+	650  5150 650  7700
+Wire Notes Line
+	650  7700 4550 7700
+Wire Notes Line
+	4550 7700 4550 5150
+Wire Notes Line
+	4550 5150 650  5150
+Text Notes 1700 7600 0    168  ~ 0
+AT Connectors
 $EndSCHEMATC
