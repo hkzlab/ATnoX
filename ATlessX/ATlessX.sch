@@ -317,4 +317,174 @@ Wire Notes Line
 	650  5100 650  650 
 Text Notes 6800 5000 2    168  ~ 0
 ATX Power On Circuit
+$Comp
+L Regulator_Linear:L7905 U3
+U 1 1 5DDA03DD
+P 8250 1600
+F 0 "U3" H 8250 1450 50  0000 C CNN
+F 1 "L7905" H 8250 1359 50  0000 C CNN
+F 2 "" H 8250 1400 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/86/41/c7/2b/45/f2/CD00000450.pdf/files/CD00000450.pdf/jcr:content/translations/en.CD00000450.pdf" H 8250 1600 50  0001 C CNN
+	1    8250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDA0489
+P 8250 1100
+F 0 "#PWR?" H 8250 850 50  0001 C CNN
+F 1 "GND" V 8255 972 50  0000 R CNN
+F 2 "" H 8250 1100 50  0001 C CNN
+F 3 "" H 8250 1100 50  0001 C CNN
+	1    8250 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 1300 8250 1100
+Wire Wire Line
+	7950 1600 7400 1600
+Wire Wire Line
+	8550 1600 9100 1600
+Text Label 7650 1600 2    50   ~ 0
+-12V
+Text Label 8900 1600 0    50   ~ 0
+-5V
+Wire Notes Line
+	7000 650  7000 2550
+Wire Notes Line
+	7000 2550 9450 2550
+Wire Notes Line
+	9450 2550 9450 650 
+Wire Notes Line
+	9450 650  7000 650 
+Text Notes 7250 2450 0    168  ~ 0
+-5V Regulator
+$Comp
+L power:GND #PWR?
+U 1 1 5DDA6B94
+P 9700 1000
+F 0 "#PWR?" H 9700 750 50  0001 C CNN
+F 1 "GND" V 9705 872 50  0000 R CNN
+F 2 "" H 9700 1000 50  0001 C CNN
+F 3 "" H 9700 1000 50  0001 C CNN
+	1    9700 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 1000 9700 1100
+$Comp
+L Device:R_Network05 RN1
+U 1 1 5DDA9E15
+P 9900 1300
+F 0 "RN1" H 10188 1346 50  0000 L CNN
+F 1 "10K" H 10188 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 10275 1300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9900 1300 50  0001 C CNN
+	1    9900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D3
+U 1 1 5DDAAF5F
+P 9700 1750
+F 0 "D3" V 9200 2550 50  0000 L CNN
+F 1 "5VSB" V 9200 2750 50  0000 L CNN
+F 2 "" V 9700 1750 50  0001 C CNN
+F 3 "~" V 9700 1750 50  0001 C CNN
+	1    9700 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D4
+U 1 1 5DDAC147
+P 9800 1750
+F 0 "D4" V 9400 2450 50  0000 L CNN
+F 1 "+5V" V 9400 2650 50  0000 L CNN
+F 2 "" V 9800 1750 50  0001 C CNN
+F 3 "~" V 9800 1750 50  0001 C CNN
+	1    9800 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D5
+U 1 1 5DDAC1AF
+P 9900 1750
+F 0 "D5" V 9600 2350 50  0000 L CNN
+F 1 "+12V" V 9600 2550 50  0000 L CNN
+F 2 "" V 9900 1750 50  0001 C CNN
+F 3 "~" V 9900 1750 50  0001 C CNN
+	1    9900 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D6
+U 1 1 5DDAC207
+P 10000 1750
+F 0 "D6" V 10200 2250 50  0000 L CNN
+F 1 "-12V" V 10200 2450 50  0000 L CNN
+F 2 "" V 10000 1750 50  0001 C CNN
+F 3 "~" V 10000 1750 50  0001 C CNN
+	1    10000 1750
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED_Small_ALT D7
+U 1 1 5DDAD244
+P 10100 1750
+F 0 "D7" V 10200 2150 50  0000 L CNN
+F 1 "-5V" V 10200 2350 50  0000 L CNN
+F 2 "" V 10100 1750 50  0001 C CNN
+F 3 "~" V 10100 1750 50  0001 C CNN
+	1    10100 1750
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10100 1500 10100 1650
+Wire Wire Line
+	10000 1500 10000 1650
+Wire Wire Line
+	9900 1500 9900 1650
+Wire Wire Line
+	9800 1500 9800 1650
+Wire Wire Line
+	9700 1500 9700 1650
+Wire Wire Line
+	9700 1850 9700 2150
+$Comp
+L power:VCC #PWR?
+U 1 1 5DDB34E7
+P 9800 1950
+F 0 "#PWR?" H 9800 1800 50  0001 C CNN
+F 1 "VCC" H 9817 2123 50  0000 C CNN
+F 2 "" H 9800 1950 50  0001 C CNN
+F 3 "" H 9800 1950 50  0001 C CNN
+	1    9800 1950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9800 1850 9800 1950
+Wire Wire Line
+	9900 1850 9900 2150
+Wire Wire Line
+	10000 1850 10000 2150
+Wire Wire Line
+	10100 1850 10100 2150
+Text Label 9700 2100 1    50   ~ 0
+5VSB
+Text Label 9900 2050 1    50   ~ 0
+12V
+Text Label 10000 2100 1    50   ~ 0
+-12V
+Text Label 10100 2050 1    50   ~ 0
+-5V
+Wire Notes Line
+	11150 2550 11150 650 
+Wire Notes Line
+	9500 650  9500 2550
+Wire Notes Line
+	9500 2550 11150 2550
+Wire Notes Line
+	9500 650  11150 650 
+Text Notes 11050 2450 2    168  ~ 0
+Power LEDs
 $EndSCHEMATC
