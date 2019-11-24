@@ -800,4 +800,66 @@ Wire Notes Line
 	4550 5150 650  5150
 Text Notes 1700 7600 0    168  ~ 0
 AT Connectors
+$Comp
+L Device:C_Small C3
+U 1 1 5DDB0FB5
+P 5450 5800
+F 0 "C3" H 5542 5846 50  0000 L CNN
+F 1 "100nF" H 5542 5755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5450 5800 50  0001 C CNN
+F 3 "~" H 5450 5800 50  0001 C CNN
+	1    5450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5DDB1122
+P 5900 5800
+F 0 "C4" H 5992 5846 50  0000 L CNN
+F 1 "100nF" H 5992 5755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5900 5800 50  0001 C CNN
+F 3 "~" H 5900 5800 50  0001 C CNN
+	1    5900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5DDB5315
+P 5700 6100
+F 0 "#PWR0116" H 5700 5850 50  0001 C CNN
+F 1 "GND" V 5705 5972 50  0000 R CNN
+F 2 "" H 5700 6100 50  0001 C CNN
+F 3 "" H 5700 6100 50  0001 C CNN
+	1    5700 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5900 5450 6000
+Wire Wire Line
+	5450 6000 5700 6000
+Wire Wire Line
+	5900 6000 5900 5900
+Wire Wire Line
+	5700 6100 5700 6000
+Connection ~ 5700 6000
+Wire Wire Line
+	5700 6000 5900 6000
+Wire Wire Line
+	5450 5700 5450 5550
+Wire Wire Line
+	5450 5550 5900 5550
+Wire Wire Line
+	5900 5550 5900 5700
+Text Label 5600 5550 0    50   ~ 0
+5VSB
+Wire Notes Line
+	4600 5150 4600 7700
+Wire Notes Line
+	4600 7700 6800 7700
+Wire Notes Line
+	6800 7700 6800 5150
+Wire Notes Line
+	6800 5150 4600 5150
+Text Notes 5050 7600 0    168  ~ 0
+Filter Caps
 $EndSCHEMATC
