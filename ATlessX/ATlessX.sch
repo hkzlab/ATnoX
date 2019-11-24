@@ -677,7 +677,7 @@ U 1 1 5DDBB6AF
 P 1100 5850
 F 0 "J3" H 1206 6228 50  0000 C CNN
 F 1 "P8" H 1206 6137 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Latch_53253-0670_1x06_P2.00mm_Vertical" H 1100 5850 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 1100 5850 50  0001 C CNN
 F 3 "~" H 1100 5850 50  0001 C CNN
 	1    1100 5850
 	1    0    0    -1  
@@ -688,7 +688,7 @@ U 1 1 5DDBB718
 P 2850 5850
 F 0 "J4" H 2956 6228 50  0000 C CNN
 F 1 "P9" H 2956 6137 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Latch_53253-0670_1x06_P2.00mm_Vertical" H 2850 5850 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 2850 5850 50  0001 C CNN
 F 3 "~" H 2850 5850 50  0001 C CNN
 	1    2850 5850
 	1    0    0    -1  
