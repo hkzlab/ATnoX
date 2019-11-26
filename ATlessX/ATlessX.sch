@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ATlessX-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -862,4 +861,220 @@ Wire Notes Line
 	6800 5150 4600 5150
 Text Notes 5050 7600 0    168  ~ 0
 Filter Caps
+$Comp
+L power:GND #PWR?
+U 1 1 5DDE969D
+P 8150 5900
+F 0 "#PWR?" H 8150 5650 50  0001 C CNN
+F 1 "GND" H 8155 5727 50  0000 C CNN
+F 2 "" H 8150 5900 50  0001 C CNN
+F 3 "" H 8150 5900 50  0001 C CNN
+	1    8150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5DDEF346
+P 7300 5650
+F 0 "H1" H 7200 5653 50  0000 R CNN
+F 1 "MountingHole_Pad" H 7400 5608 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7300 5650 50  0001 C CNN
+F 3 "~" H 7300 5650 50  0001 C CNN
+	1    7300 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5DE0ABC9
+P 7700 5650
+F 0 "H2" H 7600 5653 50  0000 R CNN
+F 1 "MountingHole_Pad" H 7800 5608 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7700 5650 50  0001 C CNN
+F 3 "~" H 7700 5650 50  0001 C CNN
+	1    7700 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5DE0B090
+P 7300 6050
+F 0 "H3" H 7200 6053 50  0000 R CNN
+F 1 "MountingHole_Pad" H 7400 6008 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7300 6050 50  0001 C CNN
+F 3 "~" H 7300 6050 50  0001 C CNN
+	1    7300 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5DE0B551
+P 7700 6050
+F 0 "H4" H 7600 6053 50  0000 R CNN
+F 1 "MountingHole_Pad" H 7800 6008 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7700 6050 50  0001 C CNN
+F 3 "~" H 7700 6050 50  0001 C CNN
+	1    7700 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 5550 7300 5450
+Wire Wire Line
+	7300 5450 7700 5450
+Wire Wire Line
+	7700 5450 7700 5550
+Wire Wire Line
+	7300 5950 7300 5850
+Wire Wire Line
+	7300 5850 7700 5850
+Wire Wire Line
+	7700 5850 7700 5950
+Wire Wire Line
+	7700 5850 8150 5850
+Wire Wire Line
+	8150 5850 8150 5900
+Connection ~ 7700 5850
+Wire Wire Line
+	7700 5450 8150 5450
+Wire Wire Line
+	8150 5450 8150 5850
+Connection ~ 7700 5450
+Connection ~ 8150 5850
+Wire Notes Line
+	6850 5150 6850 6500
+Wire Notes Line
+	6850 6500 8450 6500
+Wire Notes Line
+	8450 6500 8450 5150
+Wire Notes Line
+	8450 5150 6850 5150
+Text Notes 6950 6450 0    168  ~ 0
+Mnt. Holes
+$Comp
+L 74xx:74LS14 U2
+U 4 1 5DE4CE73
+P 9150 5400
+F 0 "U2" H 9300 5550 50  0000 C CNN
+F 1 "74LS14" H 9550 5550 50  0000 C CNN
+F 2 "" H 9150 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9150 5400 50  0001 C CNN
+	4    9150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U2
+U 5 1 5DE4E964
+P 9150 5750
+F 0 "U2" H 9300 5900 50  0000 C CNN
+F 1 "74LS14" H 9550 5900 50  0000 C CNN
+F 2 "" H 9150 5750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9150 5750 50  0001 C CNN
+	5    9150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U2
+U 6 1 5DE52E83
+P 9150 6100
+F 0 "U2" H 9300 6250 50  0000 C CNN
+F 1 "74LS14" H 9550 6250 50  0000 C CNN
+F 2 "" H 9150 6100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9150 6100 50  0001 C CNN
+	6    9150 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE66C50
+P 8650 5750
+F 0 "#PWR?" H 8650 5500 50  0001 C CNN
+F 1 "GND" V 8550 5800 50  0000 R CNN
+F 2 "" H 8650 5750 50  0001 C CNN
+F 3 "" H 8650 5750 50  0001 C CNN
+	1    8650 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 5750 8800 5750
+Wire Wire Line
+	8850 5400 8800 5400
+Wire Wire Line
+	8800 5400 8800 5750
+Connection ~ 8800 5750
+Wire Wire Line
+	8800 5750 8850 5750
+Wire Wire Line
+	8800 5750 8800 6100
+Wire Wire Line
+	8800 6100 8850 6100
+Wire Wire Line
+	9450 5400 9600 5400
+Wire Wire Line
+	9450 5750 9600 5750
+Wire Wire Line
+	9450 6100 9600 6100
+NoConn ~ 9600 5400
+NoConn ~ 9600 5750
+NoConn ~ 9600 6100
+NoConn ~ 8100 4500
+$Comp
+L 74xx:74LS74 U1
+U 2 1 5DEAB0BA
+P 10650 5750
+F 0 "U1" H 10650 6228 50  0000 C CNN
+F 1 "74LS74" H 10650 6137 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 10650 5750 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 10650 5750 50  0001 C CNN
+	2    10650 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 5650 11050 5650
+Wire Wire Line
+	10950 5850 11050 5850
+NoConn ~ 11050 5650
+NoConn ~ 11050 5850
+NoConn ~ 8550 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5DECC991
+P 10100 5700
+F 0 "#PWR?" H 10100 5450 50  0001 C CNN
+F 1 "GND" V 10105 5572 50  0000 R CNN
+F 2 "" H 10100 5700 50  0001 C CNN
+F 3 "" H 10100 5700 50  0001 C CNN
+	1    10100 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 5700 10300 5700
+Wire Wire Line
+	10300 5700 10300 5650
+Wire Wire Line
+	10300 5650 10350 5650
+Wire Wire Line
+	10300 5700 10300 5750
+Wire Wire Line
+	10300 5750 10350 5750
+Connection ~ 10300 5700
+Wire Wire Line
+	10300 5750 10300 6100
+Wire Wire Line
+	10300 6100 10650 6100
+Wire Wire Line
+	10650 6100 10650 6050
+Connection ~ 10300 5750
+Wire Wire Line
+	10650 5450 10100 5450
+Text Label 10100 5450 0    50   ~ 0
+5VSB
+Wire Notes Line
+	8500 5150 8500 6500
+Wire Notes Line
+	8500 6500 11150 6500
+Wire Notes Line
+	11150 6500 11150 5150
+Wire Notes Line
+	11150 5150 8500 5150
+Text Notes 9400 6450 0    168  ~ 0
+Spares
 $EndSCHEMATC
