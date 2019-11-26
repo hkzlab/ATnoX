@@ -11,9 +11,9 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (1 In1.Cu power)
-    (2 In2.Cu power)
+    (0 F.Cu signal hide)
+    (1 In1.Cu power hide)
+    (2 In2.Cu power hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -4971,6 +4971,40 @@
     (filled_polygon
       (pts
         (xy 130.683 21.463) (xy 66.167 21.463) (xy 66.167 20.447) (xy 130.683 20.447)
+      )
+    )
+  )
+  (zone (net 5) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 124.46 91.44) (xy 100.33 91.44) (xy 100.33 88.9) (xy 124.46 88.9)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 103.898009 89.223141) (xy 103.933551 89.266449) (xy 104.106377 89.408284) (xy 104.303553 89.513676) (xy 104.517501 89.578577)
+        (xy 104.684248 89.595) (xy 104.684257 89.595) (xy 104.739999 89.60049) (xy 104.795741 89.595) (xy 111.067421 89.595)
+        (xy 111.123172 89.600491) (xy 111.178923 89.595) (xy 111.178924 89.595) (xy 111.345671 89.578577) (xy 111.559619 89.513676)
+        (xy 111.756795 89.408284) (xy 111.929621 89.266449) (xy 111.965167 89.223136) (xy 112.161303 89.027) (xy 124.333 89.027)
+        (xy 124.333 91.313) (xy 100.457 91.313) (xy 100.457 89.027) (xy 103.701868 89.027)
+      )
+    )
+  )
+  (zone (net 5) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 121.92 91.44) (xy 115.57 91.44) (xy 115.57 88.9) (xy 121.92 88.9)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 121.793 91.313) (xy 115.697 91.313) (xy 115.697 89.027) (xy 121.793 89.027)
       )
     )
   )
