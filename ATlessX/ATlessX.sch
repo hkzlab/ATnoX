@@ -471,7 +471,7 @@ Wire Wire Line
 Text Label 9700 2150 1    50   ~ 0
 5VSB
 Text Label 9900 2150 1    50   ~ 0
-12V
++12V
 Text Label 10000 2150 1    50   ~ 0
 -12V
 Text Label 10100 2150 1    50   ~ 0
