@@ -135,7 +135,7 @@ U 1 1 5DD82992
 P 1950 4050
 F 0 "C2" H 2041 4096 50  0000 L CNN
 F 1 "10uF" H 2041 4005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1950 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.3" H 1950 4050 50  0001 C CNN
 F 3 "~" H 1950 4050 50  0001 C CNN
 	1    1950 4050
 	1    0    0    -1  
@@ -201,7 +201,7 @@ U 1 1 5DD82E48
 P 1350 4050
 F 0 "C1" H 1441 4096 50  0000 L CNN
 F 1 "1uF" H 1441 4005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1350 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.3" H 1350 4050 50  0001 C CNN
 F 3 "~" H 1350 4050 50  0001 C CNN
 	1    1350 4050
 	1    0    0    -1  
@@ -322,7 +322,7 @@ U 1 1 5DDA03DD
 P 8250 1600
 F 0 "U3" H 8250 1450 50  0000 C CNN
 F 1 "L7905" H 8250 1359 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 8250 1400 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 8250 1400 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/86/41/c7/2b/45/f2/CD00000450.pdf/files/CD00000450.pdf/jcr:content/translations/en.CD00000450.pdf" H 8250 1600 50  0001 C CNN
 	1    8250 1600
 	1    0    0    -1  
