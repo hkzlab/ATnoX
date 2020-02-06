@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 26)
+    (drawings 27)
     (tracks 333)
     (zones 0)
     (modules 31)
@@ -1596,6 +1596,9 @@
     )
   )
 
+  (gr_text rev.1 (at 167.64 111.76) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text tabaglio@posteo.net (at 102.87 86.36 270) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15) italic) (justify mirror))
   )
