@@ -479,7 +479,7 @@ U 1 1 5DD97B5B
 P 9000 3650
 F 0 "J2" H 9050 4267 50  0000 C CNN
 F 1 "ATX" H 9050 4176 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-20A_2x10_P4.20mm_Vertical" H 9000 3650 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-20A2_2x10_P4.20mm_Horizontal" H 9000 3650 50  0001 C CNN
 F 3 "~" H 9000 3650 50  0001 C CNN
 	1    9000 3650
 	1    0    0    -1  
@@ -1071,7 +1071,7 @@ U 1 1 5F276A3E
 P 2500 6250
 F 0 "J3" H 2550 6767 50  0000 C CNN
 F 1 "AT" H 2550 6676 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-14A_2x07_P4.20mm_Vertical" H 2500 6250 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-14A2_2x07_P4.20mm_Horizontal" H 2500 6250 50  0001 C CNN
 F 3 "~" H 2500 6250 50  0001 C CNN
 	1    2500 6250
 	1    0    0    -1  
