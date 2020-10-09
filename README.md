@@ -12,15 +12,31 @@ In fact, the output connector uses the same pinout as the ATX2AT, but as I still
 
 ## Pinout
 
+14 pin connector, front view.
+
 ```text
                 ____
 .----.----.----|----|----.----.----.
-| 22 | 21 | 20 | 19 | 18 | 17 | 16 |
+| 14 | 13 | 12 | 11 | 10 |  9 |  8 |
 |----+----+----+----+----+----+----|
-|    |    |    |    |    |    |    |
+|  7 |  6 |  5 |  4 |  3 |  2 |  1 |
 '----'----'----'----'----'----'----'
-
 ```
+
+1. +12V
+2. +5V
+3. +5V
+4. GND
+5. GND
+6. TICK
+7. -5V
+8. +12V
+9. +5V
+10. +5V
+11. GND
+12. GND
+13. Power OK signal
+14. -12V
 
 ## Component list
 
