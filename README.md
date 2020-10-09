@@ -28,7 +28,7 @@ In fact, the output connector uses the same pinout as the ATX2AT, but as I still
 3. +5V
 4. GND
 5. GND
-6. TICK
+6. TICK (50/60Hz depending on X1)
 7. -5V
 8. +12V
 9. +5V
