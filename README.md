@@ -8,7 +8,7 @@ The [ATX2AT](https://x86.fr/atx2at-smart-converter/) is a wonderful device (I ow
 
 In fact, the output connector uses the same pinout as the ATX2AT, but as I still had a free pin available, I decided to include a **TICK generator**: a 50/60hz square wave signal required by some big-box Amigas to turn on.
 
-![Rev. 3.1 PCB](pics/rev3.1_pcb.png)
+![Rev. 3.2 PCB](pics/rev3.2_pcb.png)
 
 ## Pinout
 
