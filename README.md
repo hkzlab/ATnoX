@@ -56,3 +56,4 @@ In fact, the output connector uses the same pinout as the ATX2AT, but as I still
 - logic-4000 libraries taken from [alexisvl/kicad-schlib](https://github.com/alexisvl/kicad-schlib)
 - ATX power-on circuit taken from [skiselev/isa8_backplane](https://github.com/skiselev/isa8_backplane)
 - Amiga Tick generator taken from [Aminet](http://aminet.net/package/docs/hard/Mix_and_Tick)
+- Thanks to [@A-Small-Mice](https://github.com/A-Small-Mice) for the printable case
